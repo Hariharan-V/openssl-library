@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+CXX	:= g++ 
+DEBUG	:=	-g -std=c++11
+=======
+CXX	:= g++
+DEBUG	:=	-g
+>>>>>>> 9b86e4f86cfba282b96ca48ef104a3b324e50a52
+OPT	:=	#-O2
+CFLAGS	:= $(DEBUG) $(OPT)
+LD	:= g++
+LDFLAGS	:= $(DEBUG) -L ../../lib/openssl -lcrypto
+
+all: crypto
+
+<<<<<<< HEAD
+crypto:	crypto.cpp 
+=======
+crypto:	crypto.cpp
+>>>>>>> 9b86e4f86cfba282b96ca48ef104a3b324e50a52
+	$(CXX) $(CFLAGS) $< -o crypto $(LDFLAGS)
+
